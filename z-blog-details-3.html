@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<!--<![endif]-->
+
+<head>
+    <!-- Basic Page Needs -->
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+    <title>CARROT_XANH | My Blog</title>
+
+    <meta name="author" content="themesflat.com">
+
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Theme Style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/animationtest.css">
+
+    <!-- Reponsive -->
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+    
+    <!-- Favicon and Touch Icons  -->
+    <link rel="shortcut icon" href="assets/icon/Favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/icon/Favicon.png">
+
+    <!-- Trường thông tin liên hệ (sau này sẽ cần xóa đi để bảo mật thông tin)  -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-database-compat.js"></script>
+    <script src="assets/js/contact.js"></script>
+    <script src="assets/js/email.min.js"></script>
+    <script>
+        (function () {
+        emailjs.init("mv4YHMqYeaoRg87fk"); // Public Key của bạn
+        })();
+    </script>
+    <!-- end  -->
+
+</head>
+
+<body class="body header-fixed team-page">
+
+    <!-- preloade -->
+    <div class="preload preload-container">
+        <div class="preload-logo"></div>
+    </div>
+    <!-- /preload -->
+    <div id="wrapper" class="wrapper-style">
+        <div id="page" class="clearfix">
+            <header class="header">
+                <div class="tf-container">
+                    <div class="row">
+                        <div class="col-md-12">                              
+                            <div id="site-header-inner">                                 
+                                <div id="site-logo" class="clearfix">
+                                    <div id="site-logo-inner">
+                                        <a href="index.html" rel="home" class="main-logo">
+                                            <img id="logo_header" src="assets/images/logo/logo.png" alt="Image">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="header-center">
+                                    <nav id="main-nav" class="main-nav">
+                                        <ul id="menu-primary-menu" class="menu">
+                                            <li class="menu-item">
+                                                <a href="index.html">TRANG CHỦ</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="Introduce.html">GIỚI THIỆU</a>
+                                            </li>
+                                            <li class="menu-item menu-item-has-children">
+                                                <a href="portfolio.html">PORTFOLIO</a>
+                                                <ul class="sub-menu">
+                                                    <li class="menu-item"><a href="publications.html">Ấn phẩm truyền thông</a></li>
+                                                    <li class="menu-item"><a href="packaging.html">Thiết kế bao bì</a></li>
+                                                    <li class="menu-item"><a href="painting.html">Digital painting</a></li>
+                                                    <li class="menu-item"><a href="social.html">Truyền thông xã hội</a></li>
+                                                    <li class="menu-item"><a href="photography.html">Nhiếp ảnh</a></li>
+                                                    <li class="menu-item"><a href="videomotion.html">Video/Motion</a></li>
+                                                    <li class="menu-item"><a href="brandidentity.html">Nhận diện thương hiệu</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item  current-menu-item">
+                                                <a href="blog.html">S.TIN TỨC</a>                                        
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="contact.html">LIÊN HỆ</a>                                        
+                                            </li>
+                                        </ul>
+                                    </nav><!-- /#main-nav -->
+                                </div>
+                                <div class="header-right">
+                                    <a href="#" onclick="switchTheme()" class="mode-switch"><img id="img-mode" src="assets/images/icon/sun.png" alt="Image"></a>
+                                    <a href="https://zalo.me/0356040477" class="tf-button rounded-ends zalo" target="_blank"><i class="icon-zalo"></i><span>ZALO</span></a>
+                                    <a href="https://www.facebook.com/CarrotDes" class="tf-button rounded-ends connect" target="_blank"><i class="icon-facebook"></i><span>FACEBOOK</span></a>
+                                </div>
+                                <div class="mobile-button"><span></span></div><!-- /.mobile-button -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+                
+            <!-- title page -->
+            <section class="tf-page-title">    
+                <div class="tf-container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2 class="page-title-heading">BLOG DETAIL</h2>
+                            <ul class="breadcrumbs">
+                                <li><a href="index.html">HOME</a></li>
+                                <li><a href="blog.html">OUR BLOG</a></li>
+                                <li>BLOG DETAIL</li>
+                            </ul> 
+                        </div>
+                    </div>
+                </div>                    
+            </section>
+
+            <section class="tf-blog">
+                <div class="tf-container">
+                    <div class="row">
+                        <div class="col-xl-9 col-lg-8 col-md-12">
+                            <div class="detail-inner">
+                                <div class="image">
+                                    <img class="rounded-corners" src="assets/images/blog/blog3/blog-details-1.jpg" alt="Image">
+                                </div>
+
+                                <div class="title">
+                                    <h3 >Font Some Time Later Việt hóa miễn phí</h3>
+                                    <div class="category">FONT FREE</div>
+                                </div>
+                                <div class="meta">
+                                    <span class="admin"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 0C8.51067 0 5.67188 2.8388 5.67188 6.32812C5.67188 9.81745 8.51067 12.6562 12 12.6562C15.4893 12.6562 18.3281 9.81745 18.3281 6.32812C18.3281 2.8388 15.4893 0 12 0Z" fill="#21E786"/>
+                                        <path d="M19.8734 16.7904C18.1409 15.0313 15.8442 14.0625 13.4062 14.0625H10.5938C8.15588 14.0625 5.85909 15.0313 4.12659 16.7904C2.40258 18.5409 1.45312 20.8515 1.45312 23.2969C1.45312 23.6852 1.76794 24 2.15625 24H21.8438C22.2321 24 22.5469 23.6852 22.5469 23.2969C22.5469 20.8515 21.5974 18.5409 19.8734 16.7904Z" fill="#21E786"/>
+                                        </svg>                                        
+                                        Quan Vân Trường</span>
+                                    <span class="date"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2 9C2 7.11438 2 6.17157 2.58579 5.58579C3.17157 5 4.11438 5 6 5H18C19.8856 5 20.8284 5 21.4142 5.58579C22 6.17157 22 7.11438 22 9C22 9.4714 22 9.70711 21.8536 9.85355C21.7071 10 21.4714 10 21 10H3C2.5286 10 2.29289 10 2.14645 9.85355C2 9.70711 2 9.4714 2 9Z" fill="#21E786"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2.58579 21.4142C2 20.8284 2 19.8856 2 18V13C2 12.5286 2 12.2929 2.14645 12.1464C2.29289 12 2.5286 12 3 12H21C21.4714 12 21.7071 12 21.8536 12.1464C22 12.2929 22 12.5286 22 13V18C22 19.8856 22 20.8284 21.4142 21.4142C20.8284 22 19.8856 22 18 22H6C4.11438 22 3.17157 22 2.58579 21.4142ZM8 16C7.44772 16 7 16.4477 7 17C7 17.5523 7.44772 18 8 18H16C16.5523 18 17 17.5523 17 17C17 16.4477 16.5523 16 16 16H8Z" fill="#21E786"/>
+                                        <path d="M7 3L7 6" stroke="#21E786" stroke-width="2" stroke-linecap="round"/>
+                                        <path d="M17 3L17 6" stroke="#21E786" stroke-width="2" stroke-linecap="round"/>
+                                        </svg>                                        
+                                        10 June 2025</span>
+                                </div>
+        
+                                <div class="content-inner mb24">
+                                    <p class="mb13"><STRONG>Some Time Later Việt hóa</STRONG> - là font chữ trưng bày (display font) được lấy cảm hứng từ phần tiêu đề và các thẻ thời gian nổi bật trong loạt phim hoạt hình SpongeBob SquarePants của Nickelodeon. Với phong cách ngộ nghĩnh và đậm chất hoạt hình, font này mang đến cảm giác vui tươi, khác biệt – rất thích hợp cho tiêu đề, poster, bìa sách hoặc các thiết kế sáng tạo mang màu sắc hài hước.</p>
+                                    <p>Với giấy phép SIL Open Font License (OFL), bạn có thể thoải mái sử dụng font này cho cả mục đích cá nhân lẫn thương mại mà không lo về vấn đề bản quyền. Đây là lựa chọn lý tưởng cho những ai cần một font chữ độc đáo mà vẫn đảm bảo tính linh hoạt trong thiết kế.</p>
+                                </div>
+                                <div class="image">
+                                    <img class="rounded-corners" src="assets/images/blog/blog3/blog-details-2.jpg" alt="Image">
+                                </div>
+                                <div class="image">
+                                    <img class="rounded-corners" src="assets/images/blog/blog3/blog-details-3.jpg" alt="Image">
+                                </div>
+                                <div class="content-inner">
+                                    <p class="mb13">Không chỉ là một công cụ thiết kế, Some Time Later còn là cầu nối cảm xúc – gợi nhớ đến tuổi thơ sôi động cùng SpongeBob, những tiếng cười giòn giã và các tấm “time card” quen thuộc. Nếu bạn đang muốn thêm chút chất “hoạt hình cổ điển” và nét hài hước tinh tế vào dự án của mình, font chữ này chắc chắn sẽ không làm bạn thất vọng.</p>
+                                </div>
+                                <div class="content-inner">
+                                    <p><strong>Lưu ý:</strong> Font có thể sử dụng cho mục đích cá nhân và thương mại.</p>
+                                    <p>Nguồn bài viết bởi <a href="https://www.dafontvn.com/2025/05/font-some-time-later-viet-hoa.html"><strong>dafont.vn</strong></a></p>
+                                </div>
+                                <div class="content-inner">
+                                    <a href="https://drive.google.com/file/d/1l01HdkBcaFbKBAY2Yfce5UQyMD67RHVz/view" class="rounded-ends tf-button">LINK DOWNLOAD</a>
+                                </div>
+                                <div class="content-bottom">
+                                    <div class="widget widget-tag">
+                                        <h6 class="widget-title">TAGS:</h6>
+                                        <ul>
+                                            <li><a href="#" >FONT</a></li>
+                                            <li><a href="#" >SHARE</a></li>
+                                            <li><a href="#" >FREE</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="widget widget-socical">
+                                        <h6 class="widget-title">SHARE:</h6>
+                                        <ul>
+                                            <li><a href="#" class="icon-fl-vt"></a></li>
+                                            <li><a href="#" class="fab fa-facebook"></a></li>
+                                            <li><a href="#" class="fab fa-youtube"></a></li>
+                                        </ul>
+                                        
+                                    </div>
+                                    
+                                </div>
+
+                                <ul class="post-navigator">
+                                    <li>
+                                        <div class="thump">
+                                            <img src="assets/images/blog/prev-next/post2.jpg" alt="Image">
+                                        </div>
+                                        <div class="content">
+                                            <a href="#" class="btn-post btn-prev">PREVIOUS</a>
+                                            <h6 class="title"><a href="z-blog-details-2.html">Vietnam 3D Isometric – 63 tỉnh thành Việt Nam...</a></h6>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="thump">
+                                            <img src="assets/images/blog/prev-next/post4.jpg" alt="Image">
+                                        </div>
+                                        <div class="content">
+                                            <a href="#" class="btn-post btn-next">NEXT</a>
+                                            <h6 class="title"><a href="z-blog-details-4.html">Tìm hiểu về Toggle Dynamic Text - công cụ văn...</a></h6>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-12">
+                            <div class="side-bar-details">
+                                <div class="widget widget-category">
+                                    <h4 class="widget-title">CATEGORIES</h4>
+                                    <ul>
+                                        <li><a href="#">NEWs (1)</a> </li>
+                                        <li><a href="#">SHOWCASE (1)</a> </li>
+                                        <li><a href="#">FONT FREE (1)</a> </li>
+                                        <li><a href="#">TUTORIAL (1)</a> </li>
+                                        <li><a href="#">EXPERIENCE (0)</a> </li>
+                                        <li><a href="#">RESOURCES (0)</a> </li>
+                                    </ul>
+                                </div>
+                                <div class="widget widget-recent-post">
+                                    <h4 class="widget-title">RECENT POSTS</h4>
+                                    <ul>
+                                        <li>
+                                            <div class="post-img">
+                                                <img src="assets/images/blog/recent/recent-post-1.jpg" alt="Post New">
+                                            </div>
+                                            <div class="post-content">
+                                                <h6 class="title"><a href="z-blog-details-1.html">Adobe Express nâng tầm sáng tạo với loạt...</a></h6>
+                                                <div class="post-meta">
+                                                    <span class="category">NEWs</span>
+                                                    <span class="date">24 April 2025</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="post-img">
+                                                <img src="assets/images/blog/recent/recent-post-2.jpg" alt="Post New">
+                                            </div>
+                                            <div class="post-content">
+                                                <h6 class="title"><a href="z-blog-details-2.html">Vietnam 3D Isometric – 63 tỉnh... </a></h6>
+                                                <div class="post-meta">
+                                                    <span class="category">SHOWCASE</span>
+                                                    <span class="date">01 Jun 2025</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="post-img">
+                                                <img src="assets/images/blog/recent/recent-post-4.jpg" alt="Post New">
+                                            </div>
+                                            <div class="post-content">
+                                                <h6 class="title"><a href="z-blog-details-4.html">Tìm hiểu về Toggle Dynamic Text... </a></h6>
+                                                <div class="post-meta">
+                                                    <span class="category">TUTORIAL</span>
+                                                    <span class="date">10 Jun 2025</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="widget widget-tag ">
+                                    <h4 class="widget-title">TAG</h4>
+                                    <ul>
+                                        <li><a href="#">NEWs</a></li>
+                                        <li><a href="#">SHOWCASE</a></li>
+                                        <li><a href="#">FONT FREE</a></li>
+                                        <li><a href="#">EXPERIENCE</a></li>
+                                        <li><a href="#">RESOURCES</a></li>
+                                        <li><a href="#">TUTORIAL</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>         
+                        
+                    </div>
+                </div>
+            </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="action-box">
+                <div class="tf-container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="action-box-inner">
+                                <h2 class="title">THAM GIA CỘNG ĐỒNG CỦA CHÚNG TÔI</h2>
+                                <p class="content">Cùng giao lưu, kết bạn, tìm kiếm cơ hội tuyển dụng và chia sẻ những tài nguyên giá trị.</p>
+                                <div class="group-btn">
+                                    <a href="comming-soon.html" class="tf-button rounded-buton connect" target="_blank"><i class="icon-facebook"></i><span>FANPAGE</span></a>
+                                    <a href="comming-soon.html" class="tf-button rounded-buton zalo" target="_blank"><i class="icon-zalo"></i><span>ZALO GROUP</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-inner">
+                <div class="tf-container">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-3 col-md-12">
+                            <div class="widget widget-infor">
+                                <div class="logo">
+                                    <img id="logo_footer" src="assets/images/logo/logo-footer.png" alt="Image">
+                                </div>
+                                <p class="content">Cảm ơn bạn đã dành một chút thời gian quý giá để ghé thăm nơi này!</p>
+                                <p class="contact_2">Thông tin liên hệ:</p>
+                                <div class="widget contact_2">
+                                    <div class="menu">
+                                        <ul >
+                                            <li><p class="contact_2">Hotline: <a href="tel:0356040477">0356040477</a></p></li>
+                                            <li><p class="contact_2">Email: <a href="mailto:carrotxanh.designer@gmail.com">carrotxanh.designer@gmail.com</a></p></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-12">
+                            <div class="widget widget-menu">
+                                <div class="menu menu-1">
+                                    <h6 class="widget-title">THÔNG TIN</h6>
+                                    <ul >
+                                        <li><a href="index.html">Trang chủ</a></li>
+                                        <li><a href="Introduce.html">Giới thiệu</a></li>
+                                        <li><a href="portfolio.html">Portfolio</a></li>
+                                        <li><a href="contact.html">Liên hệ</a></li>
+                                    </ul>
+                                </div>
+                                <div class="menu menu-2">
+                                    <h6 class="widget-title">S.TIN TỨC</h6>
+                                    <ul >
+                                        <li><a href="blog.html">News</a></li>
+                                        <li><a href="blog.html">Showcase</a></li>
+                                        <li><a href="blog.html">Font free</a></li>
+                                        <li><a href="blog.html">Resouces</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-5 col-md-12">
+                            <div class="widget widget-subcribe">
+                                <h6 class="widget-title">ĐỂ LẠI EMAIL NẾU BẠN CẦN HỖ TRỢ</h6>
+                                <form id="subscribe-form" onsubmit="sendSubscribeEmail(event)">
+                                    <input type="email" placeholder="Email của bạn" required="" id="subscribe-email" name="reply_to" required>
+                                    <fieldset style="display:none;"><input type="text" name="send_date" id="subscribe-date"></fieldset>
+                                    <button class="tf-button" type="submit" id="subscribe-button">GỬI</button>
+                                </form>
+                                <div class="img2">
+                                    <img id="work-1" src="assets/images/iconcarrotxanh/camera.svg" alt="Image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bottom-inner">
+                <div class="tf-container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="bottom">
+                                <div class="copy-right col-base col-md-6">
+                                    <div class="widget contact_2">
+                                        <div class="menu">
+                                            <ul >
+                                                <li><p class="contact_2">@ 2023. All rights reserved. With Energy and Love from <a href="https://www.facebook.com/NguyenThuThao.tt">❤ Thảo Rùa.</a></p></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <ul class="social-item ">
+                                    <li><a href="https://www.facebook.com/CarrotDes"><i class="fab fa-facebook"></i></a></li>
+                                    <li><a href="https://wa.me/84356040477"><i class="fab fa-whatsapp"></i></a></li>
+                                    <li><a href="https://www.youtube.com/@carrotxanh"><i class="fab fa-youtube"></i></a></li>
+                                    <li><a href="https://www.instagram.com/carrot.xanh/"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="https://discord.gg/xRmzRNVj"><i class="icon-fl-vt"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+    <!-- Bottom -->
+    <a id="scroll-top"></a>
+    <!-- Cursor Effect Elements -->
+    <div class="tf-mouse tf-mouse-outer"></div>
+    <div class="tf-mouse tf-mouse-inner"></div>
+    <!-- Javascript -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/jquery2.min.js"></script>
+    <script src="assets/js/jquery.easing.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/textanimation.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/swiper.js"></script>
+    <script src="assets/js/switchmode.js"></script>
+    <script src="assets/js/plugin.js"></script>
+    <script src="assets/js/shortcodes.js"></script>
+    <script src="assets/js/mycode.js"></script>
+    <script src="assets/js/jquery.stellar.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.js"></script>
+    <script src="assets/js/interface.js"></script>
+    <script src="assets/css/Magnificpopup.css"></script>
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/firebase.js"></script>
+
+</body>
+
+</html>
